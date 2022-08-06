@@ -1,26 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* ---------- IMPORT FONTS ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Oswald&family=Roboto&family=Square+Peg&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* ---------- IMPORT CUSTOM CSS ---------- */
+@import '../layouts/Header.css';
+@import '../components/Buttons/Button.css';
+@import '../containers/SectionOne.css';
 
-* {
-  box-sizing: border-box;
-}
+/* ---------- IMPORT TAILWINDCSS ---------- */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  :root {
+    --color-sky: 14 165 233;
+    --color-purple: 168 85 247;
+    --color-pink: 236 72 153;
+    --color-emerald: 20 184 166;
+    --color-orange: 249 115 22;
+
+    --color-circa: var(--color-sky);
   }
+
+  html,
   body {
-    color: white;
-    background: black;
+    font-family: 'Catamaran', sans-serif;
+    @apply p-0 m-0;
+  }
+
+  * {
+    @apply box-border;
   }
 }

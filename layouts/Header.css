@@ -1,0 +1,65 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .navbar {
+    @apply bg-[#1c2237] h-20 flex justify-center items-center text-[1.2rem] relative top-0 z-[999] md:sticky;
+  }
+
+  .navbar-container {
+    @apply h-20 container flex flex-wrap justify-between items-center mx-auto;
+  }
+
+  .container {
+    @apply z-[1] w-full max-w-[1300px] mr-auto ml-auto pr-[50px] pl-[50px];
+  }
+
+  .navbar-logo {
+    @apply justify-self-start cursor-pointer no-underline flex items-center absolute top-0 left-0 translate-x-1/4 translate-y-2/4;
+  }
+
+  .icon-group {
+    @apply flex items-center cursor-pointer;
+  }
+
+  .navbar-icon {
+    @apply mr-2 text-xl;
+  }
+
+  .nav-menu {
+    @apply flex flex-col w-full h-[90vh] absolute top-20 -left-full opacity-100 transition-all duration-500 ease-in md:flex-row md:items-center md:list-none md:text-center md:justify-end md:static md:h-[inherit] md:space-x-2;
+  }
+
+  .nav-menu.active {
+    @apply bg-[#1c2237] left-0 opacity-100 transition-all duration-700 ease-in z-[1];
+  }
+
+  .nav-item {
+    @apply text-[#fff] text-center items-center /*w-full*/ h-20 hover:border-none hover:text-[#f00946] transition-all duration-300 ease-in hover:scale-110 md:h-20 md:border-b-2 md:border-solid md:border-b-transparent  md:flex md:items-center md:no-underline md:py-2 md:px-4 /*md:hover:text-[#fff]*/ md:transition-all md:duration-300 md:ease-in md:hover:scale-110 /*md:nav-item-hover*/;
+  }
+
+  .nav-item-hover {
+    @apply hover:border-y-2 hover:border-solid hover:border-y-[#f00946];
+  }
+
+  .nav-links {
+    @apply text-center  /*w-full*/ table md:flex md:items-center md:no-underline md:py-2 md:px-4 md:h-full;
+  }
+
+  .nav-links-hover {
+    @apply hover:text-[#f00946] hover:scale-125 hover:transition-all hover:duration-300 hover:ease-in;
+  }
+
+  .menu-icon {
+    @apply inline-flex items-center p-2 ml-3 text-xl text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-400 transition-all duration-500 ease-in;
+  }
+
+  .nav-btn {
+    @apply flex justify-center items-center /*h-[120px]*/;
+  }
+
+  .btn-link {
+    @apply flex justify-center items-center no-underline py-2 px-4 h-full;
+  }
+}

@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --primary: #fff;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-2 px-5 rounded outline-none border-none cursor-pointer whitespace-nowrap;
+  }
+
+  .btn--primary {
+    @apply bg-[color:var(--primary)] text-[#242424] border border-solid border-[color:var(--primary)];
+  }
+
+  .btn--outline {
+    @apply bg-transparent text-[#fff] py-2 px-5 border border-solid border-[color:var(--primary)] transition-all duration-300 ease-out;
+  }
+
+  .btn--medium {
+    @apply py-2 px-5 text-lg btn-hover;
+  }
+
+  .btn--large {
+    @apply py-3 px-[26px] text-xl btn-hover;
+  }
+
+  .btn--mobile {
+    @apply text-center rounded w-4/5 no-underline text-2xl bg-transparent text-[#fff] py-3.5 px-5 border border-solid border-[#fff] transition-all duration-300 ease-out btn-hover;
+  }
+
+  .btn-hover {
+    @apply hover:transition-all hover:duration-300 hover:ease-out hover:bg-[#fff] hover:text-[#242424];
+  }
+
+  .btn--wide {
+    @apply py-3 px-16 text-xl btn--wide-hover;
+  }
+
+  .btn--wide-hover {
+    @apply hover:text-[#fff] hover:bg-[#f00946] hover:transition-all hover:duration-200 hover:ease-out;
+  }
+
+  .primary {
+    @apply bg-[#242424] text-[#fff] border-none primary-hover;
+  }
+
+  .primary-hover {
+    @apply hover:bg-[#fff] hover:text-[#242424] hover:border-none;
+  }
+
+  .blue {
+    @apply bg-[#276afb] text-[#fff] border-none;
+  }
+
+  .red {
+    @apply bg-[#f00946] text-[#fff] border-none;
+  }
+
+  .green {
+    @apply bg-[#25ce4a] text-[#fff] border-none hover:bg-[#242424];
+  }
+}

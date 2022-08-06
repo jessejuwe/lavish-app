@@ -1,0 +1,64 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .home__section-one {
+    @apply text-white py-40 px-0;
+  }
+
+  .home__section-row {
+    @apply items-center;
+  }
+
+  .row {
+    @apply flex -mx-[15px] -mb-[15px] flex-wrap;
+  }
+
+  .col {
+    @apply mb-[15px] px-[15px] flex-1 max-w-full md:max-w-[50%] basis-full md:basis-[50%];
+  }
+
+  .home__section-text-wrapper {
+    @apply max-w-[540px] pt-0 pb-[65px] md:pb-[60px];
+  }
+
+  .top-line {
+    @apply text-[#f00946] text-base font-bold tracking-[1.4px] uppercase mb-4;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .heading {
+    @apply text-5xl mb-6 font-semibold text-[#f7f8fa];
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .dark {
+    @apply text-[#1c2237];
+  }
+
+  .darkBg {
+    @apply bg-[#1c2237];
+  }
+
+  .home__section-subtitle {
+    @apply max-w-[440px] mb-9 text-3xl;
+    font-family: 'Square Peg', 'Mouse Memoirs', cursive;
+  }
+
+  .home__section-img-wrapper {
+    @apply max-w-[555px];
+  }
+
+  .home__section-img {
+    @apply max-w-[95%] my-0 mr-0 ml-[10px] pr-0 img-img hover:scale-110 hover:rotate-12 hover:transition-transform duration-500 ease-linear;
+  }
+
+  .img-img {
+    @apply border-0 max-w-full align-middle inline-block;
+  }
+
+  .container {
+    @apply px-[30px] md:px-[50px];
+  }
+}
