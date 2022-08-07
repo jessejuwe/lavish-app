@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/lavish.ico" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
       <main>
         <SectionOne {...homeObjOne} />

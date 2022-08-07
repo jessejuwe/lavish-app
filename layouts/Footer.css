@@ -1,0 +1,91 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .footer-container {
+    @apply bg-[#1c2237] flex flex-col justify-center items-center px-0 pt-16 pb-8;
+  }
+
+  .footer-subscription {
+    @apply flex flex-col justify-center items-center text-center mb-6 p-6 text-gray-200;
+  }
+
+  .footer-subscription > p {
+    font-family: 'Mouse Memoirs', Arial, sans-serif;
+  }
+
+  .footer-subscription-heading {
+    @apply mb-6 text-2xl;
+  }
+
+  .footer-subscription-text {
+    @apply mb-6 text-xl;
+  }
+
+  .footer-input {
+    @apply w-full md:w-[initial] py-2 px-6 rounded-sm mr-[10px] outline-none text-lg mb-4 border border-solid border-gray-300;
+  }
+
+  .footer-input::placeholder {
+    @apply text-[#b1b1b1];
+  }
+
+  .footer-links {
+    @apply pt-8 md:pt-[initial] w-full max-w-[1000px] flex justify-center;
+  }
+
+  .footer-link-wrapper {
+    @apply flex flex-col md:flex-row;
+  }
+
+  .footer-link-items {
+    @apply flex flex-col items-start m-4 text-left w-40 box-border;
+  }
+
+  .footer-link-items > h2 {
+    @apply mb-4 text-gray-200 font-semibold;
+  }
+
+  .footer-link-items a {
+    @apply text-gray-200 no-underline mb-2 hover:text-[#f00946] hover:transition-colors hover:ease-out;
+  }
+
+  .footer-email-form h2 {
+    @apply mb-8;
+  }
+
+  /* ----- SOCIAL MEDIA ICONS ----- */
+
+  .social-icon-link {
+    @apply text-gray-200 text-2xl;
+  }
+
+  .social-media {
+    @apply max-w-[1000px] w-full;
+  }
+
+  .social-media-wrap {
+    @apply flex flex-col md:flex-row justify-between items-center w-[90%] max-w-[1000px] mx-auto mt-10 mb-0;
+  }
+
+  .social-icons {
+    @apply flex justify-between items-center w-60;
+  }
+
+  .social-logo {
+    @apply text-gray-200 justify-self-start ml-5 cursor-pointer no-underline text-[2rem] flex items-center mb-4;
+  }
+
+  .website-rights {
+    @apply text-gray-200 mb-4;
+  }
+}
+
+/* @media screen and (max-width: 820px) {
+  .btn {
+    width: 100%;
+  }
+ 
+  
+} */

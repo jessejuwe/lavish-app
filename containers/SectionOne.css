@@ -51,7 +51,7 @@
   }
 
   .home__section-img {
-    @apply max-w-[95%] my-0 mr-0 ml-[10px] pr-0 img-img hover:scale-110 hover:rotate-12 hover:transition-transform duration-500 ease-linear;
+    @apply max-w-[95%] my-0 mr-0 ml-[10px] pr-0 img-img md:hover:scale-110 md:hover:rotate-12 md:hover:transition-transform md:duration-500 md:ease-linear;
   }
 
   .img-img {
