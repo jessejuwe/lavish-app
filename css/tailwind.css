@@ -541,6 +541,8 @@ html,
     display: inline-block;
     width: 60px;
     height: 60px;
+    margin-top: initial;
+    margin-right: initial;
   }
 
   .spinner:after {
@@ -557,6 +559,8 @@ html,
     display: inline-block;
     width: 35px;
     height: 35px;
+    margin-top: initial;
+    margin-right: initial;
   }
 
   .spinner:after {
