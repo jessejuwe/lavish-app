@@ -87,8 +87,8 @@ const Footer: React.FC<Props> = props => {
               </div>
 
               <small className="website-rights">
-                LAVISH © 2022
-                <span className="text-[#f00946] ml-4">IKTHEENIGMA</span>
+                Copyright © 2022 LAVISH All rights reserved.
+                <span className="text-[#f00946] ml-2">IKTHEENIGMA</span>
               </small>
 
               <div className="social-icons">

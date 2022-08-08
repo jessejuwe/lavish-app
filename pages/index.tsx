@@ -1,13 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import SectionOne from '../containers/SectionOne';
-import {
-  homeObjFour,
-  homeObjOne,
-  homeObjThree,
-  homeObjTwo,
-} from '../helpers/data';
-import Header from '../layouts/Header';
+import { homeObjFour, homeObjThree, homeObjTwo } from '../helpers/data';
 
 const Home: NextPage = () => {
   return (
@@ -18,10 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/lavish.ico" />
       </Head>
 
-      {/* <Header /> */}
-
       <main>
-        <SectionOne {...homeObjOne} />
         <SectionOne {...homeObjThree} />
         <SectionOne {...homeObjTwo} />
         <SectionOne {...homeObjFour} />

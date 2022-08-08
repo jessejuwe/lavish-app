@@ -635,7 +635,8 @@ html,
 }
 
 .navbar{
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0px;
   z-index: 999;
   display: flex;
@@ -645,13 +646,6 @@ html,
   --tw-bg-opacity: 1;
   background-color: rgb(28 34 55 / var(--tw-bg-opacity));
   font-size: 1.2rem;
-}
-
-@media (min-width: 768px){
-  .navbar{
-    position: -webkit-sticky;
-    position: sticky;
-  }
 }
 
 .container{
@@ -1395,8 +1389,8 @@ html,
   margin-right: auto;
 }
 
-.ml-4{
-  margin-left: 1rem;
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .flex{

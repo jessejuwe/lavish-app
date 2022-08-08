@@ -4,7 +4,7 @@
 
 @layer components {
   .navbar {
-    @apply bg-[#1c2237] h-20 flex justify-center items-center text-[1.2rem] relative top-0 z-[999] md:sticky;
+    @apply bg-[#1c2237] h-20 flex justify-center items-center text-[1.2rem] sticky top-0 z-[999];
   }
 
   .navbar-container {

@@ -12,7 +12,6 @@ type Footer = { title: string; to: string };
 
 export const ABOUT_US: Array<Footer> = [
   { title: 'How it works', to: '/sign-up' },
-  { title: 'Testimonials', to: '/' },
   { title: 'Careers', to: '/' },
   { title: 'Investors', to: '/' },
   { title: 'Terms of Service', to: '/' },

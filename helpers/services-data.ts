@@ -16,10 +16,10 @@ type Props = {
   imgStart: string;
 };
 
-export const homeObjOne: Props = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+export const servicesObjOne: Props = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Exclusive Access',
   headline: 'Unlimited Transactions with zero fees',
   description:
@@ -30,7 +30,7 @@ export const homeObjOne: Props = {
   alt: 'Credit Card',
 };
 
-export const homeObjTwo: Props = {
+export const servicesObjTwo: Props = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -44,10 +44,10 @@ export const homeObjTwo: Props = {
   alt: 'Vault',
 };
 
-export const homeObjThree: Props = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+export const servicesObjThree: Props = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'EASY SETUP',
   headline: 'Super fast and simple onboarding process',
   description:
@@ -58,7 +58,7 @@ export const homeObjThree: Props = {
   alt: 'Vault',
 };
 
-export const homeObjFour: Props = {
+export const servicesObjFour: Props = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,

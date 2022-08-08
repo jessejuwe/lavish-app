@@ -1,4 +1,4 @@
-import imgOne from '../public/assets/images/svg-1.svg';
+import imgFour from '../public/assets/images/svg-4.svg';
 import imgFive from '../public/assets/images/svg-5.svg';
 import imgSeven from '../public/assets/images/svg-7.svg';
 import imgEight from '../public/assets/images/svg-8.svg';
@@ -16,21 +16,21 @@ type Props = {
   imgStart: string;
 };
 
-export const homeObjOne: Props = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'Exclusive Access',
-  headline: 'Unlimited Transactions with zero fees',
+export const productsObjOne: Props = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'VIEW OUR PRODUCTS',
+  headline: 'Shop through our catalog of products',
   description:
-    'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-  buttonLabel: 'Get Started',
+    'We provide worldwide shipping to all countries. If there are any issues, just issue a refund and we will process your request',
+  buttonLabel: 'Shop Now',
   imgStart: '',
-  img: imgOne,
+  img: imgFour,
   alt: 'Credit Card',
 };
 
-export const homeObjTwo: Props = {
+export const productsObjTwo: Props = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -44,10 +44,10 @@ export const homeObjTwo: Props = {
   alt: 'Vault',
 };
 
-export const homeObjThree: Props = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+export const productsObjThree: Props = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'EASY SETUP',
   headline: 'Super fast and simple onboarding process',
   description:
@@ -58,7 +58,7 @@ export const homeObjThree: Props = {
   alt: 'Vault',
 };
 
-export const homeObjFour: Props = {
+export const productsObjFour: Props = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
