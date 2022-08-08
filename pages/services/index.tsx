@@ -10,7 +10,10 @@ const Services: NextPage = (props: Props) => {
     <div>
       <Head>
         <title>LAVISH | Services</title>
-        <meta name="LAVISH services" content="LAVISH services and many more" />
+        <meta
+          name="LAVISH services page"
+          content="LAVISH services and many more"
+        />
         <link rel="icon" href="/lavish.ico" />
       </Head>
 

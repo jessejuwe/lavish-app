@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .spinner {
+    @apply inline-block w-[35px] md:w-[60px] lg:w-20 h-[35px] md:h-[60px] lg:h-20;
+  }
+
+  .spinner-after {
+    @apply block w-[30px] md:w-5 lg:w-10 h-[30px] md:h-5 lg:h-10 m-[10px] md:m-[6px] lg:m-2 rounded-[50%] border-[3px] border-solid border-[teal] animate-[spinning];
+  }
+
+  .spinner:after {
+    animation: spinner 1.8s linear infinite;
+  }
+
+  @keyframes spinning {
+    0% {
+      transform: rotate(0deg);
+      border-color: white transparent red transparent;
+      transition: all 2s ease;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-color: blueviolet transparent yellow transparent;
+      transition: all 2s ease;
+    }
+  }
+}

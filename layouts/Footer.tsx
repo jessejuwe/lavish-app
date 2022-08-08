@@ -65,9 +65,9 @@ const Footer: React.FC<Props> = props => {
               <div className="footer-link-items">
                 <h2>Social Media</h2>
                 {SOCIAL_MEDIA.map((item, index) => (
-                  <Link key={index} href={item.to}>
+                  <a key={index} href={item.to}>
                     {item.title}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -93,14 +93,14 @@ const Footer: React.FC<Props> = props => {
 
               <div className="social-icons">
                 {ICONS.map((item, index) => (
-                  <Link
+                  <a
                     href={item.to}
                     key={index}
                     className="social-icon-link"
                     target={item.target}
                   >
                     <item.icon />
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

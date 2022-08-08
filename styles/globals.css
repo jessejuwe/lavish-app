@@ -10,6 +10,7 @@
 @import '../layouts/Footer.css';
 @import '../components/Buttons/Button.css';
 @import '../containers/SectionOne.css';
+@import '../components/UI/LoadingSpinner.css';
 
 /* ---------- IMPORT TAILWINDCSS ---------- */
 @import 'tailwindcss/base';
@@ -35,5 +36,38 @@
 
   * {
     @apply box-border;
+  }
+
+  .not-found {
+    @apply flex h-[90vh] items-center justify-center text-center text-sm sm:text-lg md:text-xl transition-all ease-in bg-[#1c2237] text-[#f00946];
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: -15px;
+  }
+  .spinner:after {
+    content: ' ';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid teal;
+    border-color: teal transparent teal transparent;
+    animation: spinner 1.8s linear infinite;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      border-color: white transparent red transparent;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-color: blueviolet transparent yellow transparent;
+    }
   }
 }
