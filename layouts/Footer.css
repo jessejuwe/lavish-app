@@ -80,12 +80,8 @@
   .website-rights {
     @apply text-gray-200 mb-4;
   }
-}
 
-/* @media screen and (max-width: 820px) {
   .btn {
-    width: 100%;
+    @apply w-full md:w-[initial];
   }
- 
-  
-} */
+}
