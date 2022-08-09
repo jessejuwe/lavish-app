@@ -42,7 +42,7 @@
   }
 
   .btn--wide-hover {
-    @apply hover:text-[#fff] hover:bg-[#f00946] hover:transition-all hover:duration-200 hover:ease-out;
+    @apply hover:text-[#fff] hover:bg-secondary hover:transition-all hover:duration-200 hover:ease-out;
   }
 
   .primary {
@@ -57,8 +57,12 @@
     @apply bg-[#276afb] text-[#fff] border-none;
   }
 
+  .accent-blue {
+    @apply bg-test text-white border-none;
+  }
+
   .red {
-    @apply bg-[#f00946] text-[#fff] border-none;
+    @apply bg-secondary text-[#fff] border-none;
   }
 
   .green {

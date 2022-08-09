@@ -4,7 +4,7 @@
 
 @layer components {
   .footer-container {
-    @apply bg-[#1c2237] flex flex-col justify-center items-center px-0 pt-16 pb-8;
+    @apply bg-primary flex flex-col justify-center items-center px-0 pt-16 pb-8;
   }
 
   .footer-subscription {
@@ -12,7 +12,7 @@
   }
 
   .footer-subscription > p {
-    font-family: 'Mouse Memoirs', Arial, sans-serif;
+    @apply font-mouseMemoirs;
   }
 
   .footer-subscription-heading {
@@ -28,7 +28,7 @@
   }
 
   .footer-input::placeholder {
-    @apply text-[#b1b1b1];
+    @apply text-placeholder;
   }
 
   .footer-links {
@@ -48,7 +48,7 @@
   }
 
   .footer-link-items a {
-    @apply text-gray-200 no-underline mb-2 hover:text-[#f00946] hover:transition-colors hover:ease-out;
+    @apply text-gray-200 no-underline mb-2 hover:text-secondary hover:transition-colors hover:ease-out;
   }
 
   .footer-email-form h2 {

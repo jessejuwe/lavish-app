@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .pricing__section {
+    @apply pt-[100px] px-0 pb-40 flex flex-col justify-center bg-primary;
+  }
+
+  .pricing__container-card {
+    @apply w-[90%] h-[500px] md:w-[280px] md:mx-6 bg-test shadow-xl shadow-test/40 even:shadow-[#242424]/40 md:hover:text-primary no-underline rounded tb:even:scale-[1.05] hover:transform-none tb:hover:scale-[1.06] even:bg-[#242424] even:m-6 md:even:my-6 md:even:mx-0 md:transition-all md:duration-300 md:ease-out;
+  }
+
+  .pricing__container {
+    @apply flex flex-col tb:flex tb:flex-row justify-center items-center w-full md:w-[initial];
+  }
+
+  .pricing__wrapper {
+    @apply flex flex-col items-center md:items-start my-0 mx-[30px] md:my-0 md:mx-auto;
+  }
+
+  .pricing__heading {
+    @apply text-white mb-6 text-5xl font-semibold m-auto uppercase font-oswald;
+  }
+
+  .pricing__container-cardInfo {
+    @apply flex flex-col h-[500px] p-6 items-center text-white;
+  }
+
+  .pricing__container-cardInfo h3 {
+    @apply mb-[5px] text-2xl;
+  }
+
+  .pricing__container-cardInfo h4 {
+    @apply text-[40px];
+  }
+
+  .pricing__container-cardInfo p {
+    @apply text-sm mb-6;
+  }
+
+  .pricing__container-features {
+    @apply mt-4 mx-0 mb-8 list-none flex flex-col items-center;
+  }
+
+  .pricing__container-features li {
+    @apply mb-[10px];
+  }
+
+  .icon {
+    @apply my-6 mx-0;
+  }
+}

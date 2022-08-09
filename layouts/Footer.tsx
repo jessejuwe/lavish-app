@@ -10,7 +10,7 @@ type Props = {};
 
 const Footer: React.FC<Props> = props => {
   return (
-    <IconContext.Provider value={{ color: '#fff' }}>
+    <IconContext.Provider value={{ color: 'white' }}>
       <footer>
         <div className="footer-container">
           <section className="footer-subscription">
@@ -79,7 +79,7 @@ const Footer: React.FC<Props> = props => {
                 <Link href="/" className="social-logo">
                   <div className="icon-group">
                     <SiStartrek className="navbar-icon" />
-                    <p className="text-[#fff] self-center text-xl font-semibold whitespace-nowrap">
+                    <p className="text-white self-center text-xl font-semibold whitespace-nowrap">
                       LAVISH
                     </p>
                   </div>
@@ -88,7 +88,7 @@ const Footer: React.FC<Props> = props => {
 
               <small className="website-rights">
                 Copyright © 2022 LAVISH All rights reserved.
-                <span className="text-[#f00946] ml-2">IKTHEENIGMA</span>
+                <span className="text-secondary ml-2">IKTHEENIGMA</span>
               </small>
 
               <div className="social-icons">

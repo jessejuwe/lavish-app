@@ -24,26 +24,23 @@
   }
 
   .top-line {
-    @apply text-[#f00946] text-base font-bold tracking-[1.4px] uppercase mb-4;
-    font-family: 'Ubuntu', sans-serif;
+    @apply text-secondary text-base font-bold tracking-[1.4px] uppercase mb-4 font-ubuntu;
   }
 
   .heading {
-    @apply text-5xl mb-6 font-semibold text-[#f7f8fa];
-    font-family: 'Oswald', sans-serif;
+    @apply text-5xl mb-6 font-semibold text-white font-oswald;
   }
 
   .dark {
-    @apply text-[#1c2237];
+    @apply text-primary;
   }
 
   .darkBg {
-    @apply bg-[#1c2237];
+    @apply bg-primary;
   }
 
   .home__section-subtitle {
-    @apply max-w-[440px] mb-9 text-3xl m-auto md:m-[initial];
-    font-family: 'Square Peg', 'Mouse Memoirs', cursive;
+    @apply max-w-[440px] mb-9 md:mb-4 text-3xl m-auto md:m-[initial] font-squarePeg;
   }
 
   .home__section-img-wrapper {

@@ -11,6 +11,7 @@ type Props = {};
 const Header: React.FC = (props: Props) => {
   const [clicked, setClicked] = useState(false);
   const [button, setButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
   const clickhandler = () => setClicked(!clicked);
 
@@ -24,20 +25,26 @@ const Header: React.FC = (props: Props) => {
     }
   }, []);
 
+  // prettier-ignore
+  const navbarBackgroundHandler = () => window.scrollY >= 80 ? setNavbar(true) : setNavbar(false);
+
   useEffect(() => {
     showButtonHandler();
+    // Event Listener for resize
     window.addEventListener('resize', showButtonHandler);
+    // Event Listener for scroll
+    window.addEventListener('scroll', navbarBackgroundHandler);
     return window.removeEventListener('resize', showButtonHandler);
   }, [showButtonHandler]);
 
   return (
-    <IconContext.Provider value={{ color: '#fff' }}>
-      <nav className="navbar">
+    <IconContext.Provider value={{ color: 'white' }}>
+      <nav className={navbar ? 'navbar active' : 'navbar'}>
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/" className="navbar-logo">
             <div className="icon-group" onClick={closeMobileMenuHandler}>
               <SiStartrek className="navbar-icon" />
-              <p className="text-[#fff] self-center text-xl font-semibold whitespace-nowrap">
+              <p className="text-white self-center text-xl font-semibold whitespace-nowrap">
                 LAVISH
               </p>
             </div>
@@ -59,7 +66,7 @@ const Header: React.FC = (props: Props) => {
               {NAVBAR.map((item, index) => (
                 <li
                   key={index}
-                  className="nav-item"
+                  className={navbar ? 'nav-item active' : 'nav-item'}
                   onClick={closeMobileMenuHandler}
                 >
                   <Link href={item.to} className="nav-links">

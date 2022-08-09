@@ -32,10 +32,10 @@ export const VIDEOS: Array<Footer> = [
 ];
 
 export const SOCIAL_MEDIA: Array<Footer> = [
-  { title: 'Instagram', to: 'instagram.com' },
-  { title: 'Facebook', to: 'facebook.com' },
-  { title: 'YouTube', to: 'youtube.com' },
-  { title: 'Twitter', to: 'twitter.com' },
+  { title: 'Instagram', to: '//www.instagram.com' },
+  { title: 'Facebook', to: '//www.facebook.com' },
+  { title: 'YouTube', to: '//www.youtube.com' },
+  { title: 'Twitter', to: '//www.twitter.com' },
 ];
 
 type Icons = {
@@ -46,27 +46,27 @@ type Icons = {
 
 export const ICONS: Array<Icons> = [
   {
-    to: 'facebook.com',
+    to: '//www.facebook.com',
     target: '_blank',
     icon: FaFacebook,
   },
   {
-    to: 'instagram.com',
+    to: '//www.instagram.com',
     target: '_blank',
     icon: FaInstagram,
   },
   {
-    to: 'youtube.com',
+    to: '//www.youtube.com',
     target: '_blank',
     icon: FaYoutube,
   },
   {
-    to: 'twitter.com',
+    to: '//www.twitter.com',
     target: '_blank',
     icon: FaTwitter,
   },
   {
-    to: 'linkedin.com',
+    to: '//www.linkedin.com',
     target: '_blank',
     icon: FaLinkedin,
   },

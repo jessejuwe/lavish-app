@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Oswald&family=Roboto&family=Square+Peg&display=swap');
 
 /* ---------- IMPORT CUSTOM CSS ---------- */
+@import '../components/Buttons/Button.css';
+@import '../components/UI/LoadingSpinner.css';
 @import '../layouts/Header.css';
 @import '../layouts/Footer.css';
-@import '../components/Buttons/Button.css';
 @import '../containers/SectionOne.css';
-@import '../components/UI/LoadingSpinner.css';
+@import '../containers/Pricing.css';
 
 /* ---------- IMPORT TAILWINDCSS ---------- */
 @import 'tailwindcss/base';
@@ -25,13 +26,18 @@
     --color-emerald: 20 184 166;
     --color-orange: 249 115 22;
 
-    --color-circa: var(--color-sky);
+    --color-test: var(--color-sky);
+
+    --color-theme-primary: 28 34 55;
+    --color-theme-secondary: 240 9 70;
+
+    --color-primary: var(--color-theme-primary);
+    --color-secondary: var(--color-theme-secondary);
   }
 
   html,
   body {
-    font-family: 'Catamaran', sans-serif;
-    @apply p-0 m-0;
+    @apply p-0 m-0 font-catamaran;
   }
 
   * {
@@ -39,7 +45,7 @@
   }
 
   .not-found {
-    @apply flex h-[90vh] items-center justify-center text-center text-sm sm:text-lg md:text-xl transition-all ease-in bg-[#1c2237] text-[#f00946];
+    @apply flex h-[90vh] items-center justify-center text-center text-sm sm:text-lg md:text-xl transition-all ease-in bg-primary text-secondary;
   }
 
   .spinner {

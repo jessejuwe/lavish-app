@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Pricing from '../containers/Pricing';
 import SectionOne from '../containers/SectionOne';
 import { homeObjFour, homeObjThree, homeObjTwo } from '../helpers/data';
 
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <main>
         <SectionOne {...homeObjThree} />
         <SectionOne {...homeObjTwo} />
+        <Pricing />
         <SectionOne {...homeObjFour} />
       </main>
     </div>

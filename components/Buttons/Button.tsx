@@ -5,7 +5,14 @@ const STYLES: string[] = ['btn--primary', 'btn--outline'];
 // prettier-ignore
 const SIZES: string[] = ['btn--medium', 'btn--large', 'btn--mobile', 'btn--wide'];
 
-const COLOR: string[] = ['primary', 'secondary', 'blue', 'red', 'green'];
+const COLOR: string[] = [
+  'primary',
+  'secondary',
+  'blue',
+  'red',
+  'green',
+  'accent-blue',
+];
 
 type Props = {
   children: React.ReactNode;

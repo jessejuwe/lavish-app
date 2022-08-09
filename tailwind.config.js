@@ -19,9 +19,13 @@ module.exports = {
         squarePeg: ['"Square Peg"', 'cursive'],
       },
       colors: {
-        'accent-1': '#333',
-        brand: { DEFAULT: '#0fa9e6', light: '#3fbaeb', dark: '#0c87b8' },
-        circa: 'rgb(var(--color-circa) / <alpha-value>)',
+        placeholder: '#b1b1b1',
+        test: 'rgb(var(--color-test) / <alpha-value>)',
+        primary: 'rgb(var(--color-primary) / <alpha-value>)',
+        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+      },
+      screens: {
+        tb: '960px', // => @media (min-width: 640px) { ... }
       },
     },
   },
