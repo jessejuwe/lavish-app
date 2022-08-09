@@ -40,34 +40,28 @@ export const SOCIAL_MEDIA: Array<Footer> = [
 
 type Icons = {
   to: string;
-  target: string;
   icon: IconType;
 };
 
 export const ICONS: Array<Icons> = [
   {
     to: '//www.facebook.com',
-    target: '_blank',
     icon: FaFacebook,
   },
   {
     to: '//www.instagram.com',
-    target: '_blank',
     icon: FaInstagram,
   },
   {
     to: '//www.youtube.com',
-    target: '_blank',
     icon: FaYoutube,
   },
   {
     to: '//www.twitter.com',
-    target: '_blank',
     icon: FaTwitter,
   },
   {
     to: '//www.linkedin.com',
-    target: '_blank',
     icon: FaLinkedin,
   },
 ];

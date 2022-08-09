@@ -65,7 +65,12 @@ const Footer: React.FC<Props> = props => {
               <div className="footer-link-items">
                 <h2>Social Media</h2>
                 {SOCIAL_MEDIA.map((item, index) => (
-                  <a key={index} href={item.to}>
+                  <a
+                    key={index}
+                    href={item.to}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {item.title}
                   </a>
                 ))}
@@ -97,7 +102,8 @@ const Footer: React.FC<Props> = props => {
                     href={item.to}
                     key={index}
                     className="social-icon-link"
-                    target={item.target}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <item.icon />
                   </a>
