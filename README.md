@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Visit
 
-https://lavish-app-sand.vercel.app/
+https://lavishapp.vercel.app/
