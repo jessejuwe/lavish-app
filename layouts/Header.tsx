@@ -39,7 +39,8 @@ const Header: React.FC = (props: Props) => {
 
   return (
     <IconContext.Provider value={{ color: 'white' }}>
-      <nav className={navbar ? 'navbar active' : 'navbar'}>
+      {/* <nav className={navbar ? 'navbar active' : 'navbar'}> */}
+      <nav className="navbar">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/" className="navbar-logo">
             <div className="icon-group" onClick={closeMobileMenuHandler}>
